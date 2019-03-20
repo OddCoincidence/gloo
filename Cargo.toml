@@ -8,6 +8,12 @@ readme = "README.md"
 version = "0.1.0"
 
 [dependencies]
+gloo-dom = { version = "0.1.0", path = "crates/dom" }
 gloo-timers = { version = "0.1.0", path = "crates/timers" }
 
 [workspace]
+members = [
+    "crates/dom",
+    "crates/timers",
+    "examples/smartcounter"
+]
